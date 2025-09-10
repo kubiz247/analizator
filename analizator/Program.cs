@@ -10,12 +10,22 @@ namespace analizator
     {
         static void Main(string[] args)
         {
-            // Aplikacja przyjmuje ułamki i wyświetla je 
+            //nie ma algortmu eukaliptusa to sie nie skracaja
+            //korzysci: krotszy, przejrzysty, szybszy i bardziej zrozumialy kod
 
             wyswietlUlamek(48, 18);
             wyswietlUlamek(100, 25);
             wyswietlUlamek(17, 13);
         }
+
+        /*
+        nazwa funkcji: wyswietlUlamek
+        opis funkcji: wypisuje ulamek i skrocony ulamek, tworzy algorytm eukaliptusa
+        parametry: 
+            int licznik - liczba odpowiadajaca za licznik
+            int mianownik - liczba odpowiadajaca za mianownik
+        zwracany typ i opis: zwracany jest skrocony ulamek przez algorytm
+        */
         public static void wyswietlUlamek(int licznik, int mianownik)
         {
 
@@ -34,5 +44,6 @@ namespace analizator
             Console.WriteLine(nwd(18, 6));
 
         }
+
     }
 }
